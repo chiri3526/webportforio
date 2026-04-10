@@ -1,0 +1,13 @@
+<svg width="900" height="620" viewBox="0 0 900 620" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="620" rx="36" fill="url(#paint0_linear)"/>
+  <path d="M518 114C600 140 672 212 704 298C740 396 650 504 542 526C436 548 352 496 312 426C272 354 284 252 366 176C406 138 468 106 518 114Z" fill="#F5F5F4"/>
+  <path d="M432 148C460 230 466 346 450 490" stroke="#171717" stroke-width="4"/>
+  <text x="386" y="292" fill="#FAFAF9" font-family="Arial, sans-serif" font-size="38" letter-spacing="8">BRAND</text>
+  <text x="354" y="342" fill="#FAFAF9" font-family="Arial, sans-serif" font-size="36" letter-spacing="8">EDITORIAL</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="0" y1="620" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F172A"/>
+      <stop offset="1" stop-color="#0B2A20"/>
+    </linearGradient>
+  </defs>
+</svg>

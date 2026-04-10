@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply m-0 bg-[#262626] font-sans text-ink antialiased;
+  }
+
+  * {
+    @apply box-border;
+  }
+
+  a {
+    @apply text-inherit no-underline;
+  }
+}
+
+@layer components {
+  .page-shell {
+    @apply min-h-screen bg-[#262626] px-4 py-5 md:px-6 lg:px-8;
+  }
+
+  .page-panel {
+    @apply mx-auto max-w-[1440px] overflow-hidden rounded-[1.75rem] bg-white shadow-soft;
+  }
+
+  .content-container {
+    @apply mx-auto w-full max-w-[1240px] px-6 sm:px-8 lg:px-10;
+  }
+
+  .section-label {
+    @apply mb-4 text-xs font-semibold uppercase tracking-[0.35em] text-accent;
+  }
+
+  .chip {
+    @apply inline-flex items-center rounded-full bg-[#edf1f7] px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-500;
+  }
+
+  .button-primary {
+    @apply inline-flex items-center justify-center rounded-2xl bg-accent px-6 py-4 text-sm font-semibold text-white shadow-lg shadow-indigo-500/20 transition duration-200 hover:-translate-y-0.5 hover:bg-indigo-600;
+  }
+
+  .button-secondary {
+    @apply inline-flex items-center justify-center rounded-2xl bg-[#f1f4f8] px-6 py-4 text-sm font-semibold text-accent transition duration-200 hover:-translate-y-0.5 hover:bg-[#e9edf5];
+  }
+
+  .card-surface {
+    @apply rounded-[1.75rem] border border-white/70 bg-white shadow-card;
+  }
+}
