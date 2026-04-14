@@ -17,11 +17,11 @@ export function HomePage() {
             <div className="grid gap-8 lg:grid-cols-[1fr,auto] lg:items-end">
               <div>
                 <h2 className="text-4xl font-bold leading-tight md:text-5xl">
-                  新しいプロダクトやブランド体験を、一緒に形にしませんか。
+                  Let&apos;s shape your next product or brand experience together.
                 </h2>
                 <p className="mt-5 max-w-2xl text-lg leading-8 text-slate-300">
-                  サイト制作、UI 設計、情報整理、技術コンテンツ制作まで横断して対応できます。
-                  ご相談はメールまたは SNS からお気軽にどうぞ。
+                  I can support everything from website production and UI design to information structuring
+                  and technical content creation. Feel free to reach out by email or social media.
                 </p>
               </div>
               <a href="mailto:hello@example.com" className="button-primary whitespace-nowrap">

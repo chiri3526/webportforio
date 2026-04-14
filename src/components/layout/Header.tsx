@@ -53,7 +53,7 @@ export function Header() {
             type="button"
             className="inline-flex rounded-xl border border-line p-3 text-slate-700 md:hidden"
             onClick={() => setOpen((prev) => !prev)}
-            aria-label="メニューを開く"
+            aria-label="Open menu"
           >
             <Menu size={20} />
           </button>

@@ -15,7 +15,7 @@ export function HighlightsSection() {
             </h2>
           </div>
           <Link to="/projects" className="inline-flex items-center gap-2 text-sm font-semibold text-accent">
-            すべてのプロジェクトを見る
+            View All Projects
             <ArrowRight size={16} />
           </Link>
         </div>

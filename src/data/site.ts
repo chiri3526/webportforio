@@ -65,6 +65,16 @@ export const projects: Project[] = [
     url: "https://sishutsu.netlify.app/",
     featured: false,
   },
+  {
+    id: "udon",
+    title: "udon",
+    description: "A Google Apps Script and JavaScript web project published as a web app.",
+    tags: ["GAS", "JavaScript"],
+    category: "frontend",
+    image: "/images/project-gridops.svg",
+    url: "https://script.google.com/macros/s/AKfycby0egrhJvzn5AX1rqNt60HOeVMj92xxE9f3wcK1E--icxgwYK1NwcUGNSHIkQBs5ermOg/exec",
+    featured: false,
+  },
 ];
 
 export const highlights = [

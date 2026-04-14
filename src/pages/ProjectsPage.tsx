@@ -1,4 +1,4 @@
-import { ChevronDown } from "lucide-react";
+﻿import { ChevronDown } from "lucide-react";
 import { useMemo, useState } from "react";
 import { Container } from "../components/layout/Container";
 import { FilterTabs } from "../components/projects/FilterTabs";
@@ -33,7 +33,8 @@ export function ProjectsPage() {
             <p className="section-label">Projects</p>
             <h1 className="text-5xl font-extrabold tracking-tight text-slate-900 md:text-7xl">My Projects</h1>
             <p className="mt-6 max-w-3xl text-xl leading-9 text-slate-500">
-              実装力と編集視点が交差するデジタル体験をまとめています。表現、構造、運用までを含めて設計した仕事です。
+              A selection of digital experiences shaped by both implementation skill and editorial thinking,
+              designed with expression, structure, and long-term operation in mind.
             </p>
           </div>
           <FilterTabs current={activeCategory} filters={filters} onChange={setActiveCategory} />
