@@ -13,7 +13,7 @@ export function ProjectCard({ project }: { project: Project }) {
           />
         </div>
 
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="mt-4 flex min-h-[3.5rem] flex-wrap content-start gap-2">
           {project.tags.map((tag) => (
             <span key={tag} className="chip">
               {tag}
