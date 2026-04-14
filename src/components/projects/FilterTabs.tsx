@@ -1,27 +1,29 @@
-import { categories } from "../../data/site";
-import type { Category } from "../../types/content";
+import type { ProjectFilter } from "../../types/content";
 
 type FilterTabsProps = {
-  current: Category;
-  onChange: (category: Category) => void;
+  current: ProjectFilter;
+  filters: ProjectFilter[];
+  onChange: (filter: ProjectFilter) => void;
 };
 
-export function FilterTabs({ current, onChange }: FilterTabsProps) {
+const getFilterLabel = (filter: ProjectFilter) => (filter === "all" ? "All" : filter.toUpperCase());
+
+export function FilterTabs({ current, filters, onChange }: FilterTabsProps) {
   return (
     <div className="flex flex-wrap gap-3">
-      {categories.map((category) => {
-        const active = current === category.key;
+      {filters.map((filter) => {
+        const active = current === filter;
 
         return (
           <button
-            key={category.key}
+            key={filter}
             type="button"
-            onClick={() => onChange(category.key)}
+            onClick={() => onChange(filter)}
             className={`rounded-full px-5 py-3 text-sm font-medium transition ${
               active ? "bg-accent text-white shadow-lg shadow-indigo-500/20" : "bg-[#edf1f5] text-slate-500 hover:bg-[#e4e8f0]"
             }`}
           >
-            {category.label}
+            {getFilterLabel(filter)}
           </button>
         );
       })}

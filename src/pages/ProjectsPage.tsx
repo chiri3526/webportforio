@@ -4,17 +4,25 @@ import { Container } from "../components/layout/Container";
 import { FilterTabs } from "../components/projects/FilterTabs";
 import { ProjectCard } from "../components/projects/ProjectCard";
 import { projects } from "../data/site";
-import type { Category } from "../types/content";
+import type { ProjectFilter } from "../types/content";
 
 export function ProjectsPage() {
-  const [activeCategory, setActiveCategory] = useState<Category>("all");
+  const [activeCategory, setActiveCategory] = useState<ProjectFilter>("all");
+
+  const filters = useMemo<ProjectFilter[]>(() => {
+    const uniqueTags = Array.from(
+      new Set(projects.flatMap((project) => project.tags.map((tag) => tag.toLowerCase()))),
+    );
+
+    return ["all", ...uniqueTags];
+  }, []);
 
   const filteredProjects = useMemo(() => {
     if (activeCategory === "all") {
       return projects;
     }
 
-    return projects.filter((project) => project.category === activeCategory);
+    return projects.filter((project) => project.tags.some((tag) => tag.toLowerCase() === activeCategory));
   }, [activeCategory]);
 
   return (
@@ -28,7 +36,7 @@ export function ProjectsPage() {
               実装力と編集視点が交差するデジタル体験をまとめています。表現、構造、運用までを含めて設計した仕事です。
             </p>
           </div>
-          <FilterTabs current={activeCategory} onChange={setActiveCategory} />
+          <FilterTabs current={activeCategory} filters={filters} onChange={setActiveCategory} />
         </div>
 
         <div className="mt-14 grid gap-x-8 gap-y-14 lg:grid-cols-2 xl:grid-cols-3">

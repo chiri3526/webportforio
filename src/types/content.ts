@@ -1,4 +1,5 @@
-export type Category = "all" | "frontend" | "backend" | "ai" | "mobile";
+export type ProjectFilter = "all" | string;
+export type Category = ProjectFilter;
 
 export type Project = {
   id: string;
