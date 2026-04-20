@@ -31,7 +31,7 @@ export const projects: Project[] = [
     description: "A web app for generating random passwords based on selected rules.",
     tags: ["React", "Typescript", "Firebase"],
     category: "frontend",
-    image: "/images/project-lumina.svg",
+    image: "/images/project-password-generator.png",
     url: "https://passwordgenerator35.netlify.app/",
     featured: true,
   },
