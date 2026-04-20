@@ -1,0 +1,15 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
+  <title id="title">travelplan logo thumbnail</title>
+  <rect width="640" height="420" rx="28" fill="#F5F0E6"/>
+  <rect x="74" y="124" width="492" height="172" rx="28" fill="#F5F0E6"/>
+  <g transform="translate(88 140) scale(1.45)">
+    <g transform="translate(23 15)">
+      <path d="M35 66s27-25 27-43C62 9.5 50.5 0 35 0S8 9.5 8 23c0 18 27 43 27 43z" fill="#75543A"/>
+      <circle cx="35" cy="24" r="17" fill="#FFFDF8"/>
+      <path d="M25 17h20v28l-10-5-10 5V17z" fill="#F1E6D7" stroke="#596B57" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M31 25h9M31 32h7" stroke="#75543A" stroke-width="2.8" stroke-linecap="round"/>
+    </g>
+    <text x="105" y="56" fill="#2F281F" font-family="M PLUS 1p, Meiryo, sans-serif" font-size="36" font-weight="700" letter-spacing="0">travelplan</text>
+    <circle cx="283" cy="48" r="6" fill="#B98A4A"/>
+  </g>
+</svg>

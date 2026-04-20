@@ -41,7 +41,7 @@ export const projects: Project[] = [
     description: "A travel planning app that helps organize destinations and schedules.",
     tags: ["React", "Typescript", "Material UI", "Firebase"],
     category: "frontend",
-    image: "/images/project-aether.svg",
+    image: "/images/project-travelplan.svg",
     url: "https://travelplan35.netlify.app/",
     featured: true,
   },
