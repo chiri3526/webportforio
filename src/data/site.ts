@@ -29,7 +29,7 @@ export const projects: Project[] = [
     id: "password-generator",
     title: "PasswordGenerator",
     description: "A web app for generating random passwords based on selected rules.",
-    tags: ["React", "Typescript", "Firebase"],
+    tags: ["React", "Typescript", "Firebase", "Astro"],
     category: "frontend",
     image: "/images/project-password-generator.png",
     url: "https://passwordgenerator35.netlify.app/",
